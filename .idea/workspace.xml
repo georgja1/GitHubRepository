@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="079b52f4-2896-443d-8077-3c4e37c74b18" name="Default" comment="All project files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ghs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ghs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebCrawlerSimulation.iws" />
@@ -27,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ghs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ghs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -630,7 +620,7 @@
       <updated>1460584013536</updated>
       <workItem from="1460584015813" duration="498000" />
       <workItem from="1460584531145" duration="3469000" />
-      <workItem from="1460588310669" duration="1132000" />
+      <workItem from="1460588310669" duration="1248000" />
     </task>
     <task id="LOCAL-00001" summary="Project Structure">
       <created>1460584930397</created>
@@ -650,10 +640,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5099000" />
+    <option name="totallyTimeSpent" value="5215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2118" height="1281" extended-state="7" />
+    <frame x="-9" y="-9" width="2118" height="1281" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
