@@ -4,14 +4,16 @@
 
 import javax.swing.*;
 import java.awt.*;
+import javax.swing.border.Border;
 
 public class gui {
 
     static JFrame frame1;
     static Container pane;
-    static JButton btnConnect, btnDisconnect;
-    static JLabel lblServer, lblUsername, lblPassword, lblPort;
-    static JTextField txtServer, txtUsername, txtPassword, txtPort;
+    static JButton btnFind;
+    static JLabel lblWebAddress;
+    static JTextField txtWebAddress;
+    static JTextField txtWeb;
     static Insets insets;
 
 
@@ -25,48 +27,43 @@ public class gui {
         } catch (UnsupportedLookAndFeelException e) {
         }
 
+        final long serialVersionUID = 1L;
+
+        // set flow layout for the frame
+
         //Create the frame
-        frame1 = new JFrame("Sample GUI Application");
-        frame1.setSize(800, 200);
+        frame1 = new JFrame("Crawl Your Web");
+        frame1.setSize(800, 600);
         pane = frame1.getContentPane();
         insets = pane.getInsets();
         pane.setLayout(null);
 
         //Create controls
-        btnConnect = new JButton("Connect");
-        btnDisconnect = new JButton("Disconnect");
-        lblServer = new JLabel("Remote host:");
-        lblUsername = new JLabel("Username:");
-        lblPassword = new JLabel("Password:");
-        lblPort = new JLabel("Port #:");
-        txtServer = new JTextField(10);
-        txtUsername = new JTextField(10);
-        txtPassword = new JTextField(10);
-        txtPort = new JTextField(5);
+        btnFind = new JButton("Staarrrrtttttttttt");
+        lblWebAddress = new JLabel("START CRAWLING");
+        txtWebAddress = new JTextField(50);
+        txtWeb = new JTextField(25);
 
         //Add all components to panel
-        pane.add(lblServer);
-        pane.add(lblUsername);
-        pane.add(lblPassword);
-        pane.add(lblPort);
-        pane.add(txtServer);
-        pane.add(txtUsername);
-        pane.add(txtPassword);
-        pane.add(txtPort);
-        pane.add(btnConnect);
-        pane.add(btnDisconnect);
+        pane.add(btnFind);
+        pane.add(lblWebAddress);
+        //pane.add(txtWebAddress);
+        pane.add(txtWeb);
+
+        lblWebAddress.setFont(new Font("OpenSans", Font.PLAIN, 64));
+        txtWebAddress.setSize(300,300);
+        txtWeb.setText("www.seznam.cz");
+        Border border = BorderFactory.createLineBorder(Color.lightGray, 5);
+        txtWeb.setBorder(border);
+        Font font1 = new Font("OpenSans", Font.PLAIN, 25);
+        txtWeb.setFont(font1);
+        btnFind.setFont(new Font("OpenSans", Font.PLAIN, 30));
+
 
         //Place all components
-        lblServer.setBounds(insets.left + 5, insets.top + 5, lblServer.getPreferredSize().width, lblServer.getPreferredSize().height);
-        txtServer.setBounds(lblServer.getX() + lblServer.getWidth() + 5, insets.top + 5, txtServer.getPreferredSize().width, txtServer.getPreferredSize().height);
-        lblUsername.setBounds(txtServer.getX() + txtServer.getWidth() + 5, insets.top + 5, lblUsername.getPreferredSize().width, lblUsername.getPreferredSize().height);
-        txtUsername.setBounds(lblUsername.getX() + lblUsername.getWidth() + 5, insets.top + 5, txtUsername.getPreferredSize().width, txtUsername.getPreferredSize().height);
-        lblPassword.setBounds(txtUsername.getX() + txtUsername.getWidth() + 5, insets.top + 5, lblPassword.getPreferredSize().width, lblPassword.getPreferredSize().height);
-        txtPassword.setBounds(lblPassword.getX() + lblPassword.getWidth() + 5, insets.top + 5, txtPassword.getPreferredSize().width, txtPassword.getPreferredSize().height);
-        lblPort.setBounds(txtPassword.getX() + txtPassword.getWidth() + 5, insets.top + 5, lblPort.getPreferredSize().width, lblPort.getPreferredSize().height);
-        txtPort.setBounds(lblPort.getX() + lblPort.getWidth() + 5, insets.top + 5, txtPort.getPreferredSize().width, txtPort.getPreferredSize().height);
-        btnConnect.setBounds(txtPort.getX() + txtPort.getWidth() + 5, insets.top + 5, btnConnect.getPreferredSize().width, btnConnect.getPreferredSize().height);
-        btnDisconnect.setBounds(insets.left + 15, lblServer.getY() + lblServer.getHeight() + 5, btnDisconnect.getPreferredSize().width, btnDisconnect.getPreferredSize().height);
+        lblWebAddress.setBounds(insets.left + 100, insets.top + 100, lblWebAddress.getPreferredSize().width, lblWebAddress.getPreferredSize().height);
+        txtWeb.setBounds(insets.left + 100, insets.top + 250, txtWeb.getPreferredSize().width, txtWeb.getPreferredSize().height);
+        btnFind.setBounds(insets.left + 300, insets.top + 310, btnFind.getPreferredSize().width, btnFind.getPreferredSize().height);
 
         //Set frame visible
         frame1.setVisible(true);
@@ -74,6 +71,12 @@ public class gui {
         //Button's action
        // btnConnect.addActionListener(new btnConnectAction()); //Register action
     }
+
+
+
+
+
+
 
    /* public static class btnConnectAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {
